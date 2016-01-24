@@ -1,0 +1,130 @@
+* { 
+margin: 0;
+padding: 0;
+}
+body { 
+font-family: Helvetica;
+font-size: 13px;
+}
+h2 {
+    display: block;
+    font-family: helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: 810px;
+}
+h3 { 
+font-size: 14px;
+font-weight: bold;
+}
+h3.tytul { 
+font-size: 16px;
+font-weight: bold;
+}
+ul { 
+margin: 0 0 0 15px;
+}
+.lista { 
+list-style: square;
+color: #000;
+float: left;
+margin: 10px;
+}
+.listatekst {
+    color: #000000;
+    font-size: 13px;
+    font-weight: normal;
+}
+.wrapper { 
+margin: 0 auto;
+width: 800px;
+}
+.wrapper h1 { 
+text-align: center;
+margin: 10px 0 0px 0;
+font-size: 20px;
+color: #000;
+font-family: Helvetica;
+font-weight: normal;
+}
+.foto { 
+margin: 5px 5px 0 0;
+float: right;
+border: 1px solid #ccc;
+}
+.dane { 
+float: left;
+}
+.do { 
+
+}
+.umiejetnosci h2 { 
+margin: 0;
+}
+.clear { 
+clear: both;
+}
+.umiejetnosci ul { 
+}
+.umiejetnosci ul ul { 
+margin: 0 0 0 20px;
+}
+.umiejetnosci ul li { 
+float: left;
+margin: 0 0 0 10px;
+}
+.umiejetnosci ul li ul li { 
+float: none;
+}
+.stopka { 
+font-size: 10px;
+}
+.dz tr > td {
+padding-bottom: 4px;
+}
+table { 
+width: 650px;
+}
+tbody { 
+margin: 0;
+padding: 0;
+}
+b { 
+font-weight: normal;
+font-size: 15px;
+}
+.maly { 
+width: 78px;
+}
+.maly2 { 
+width:165px;
+}
+.dlugi { 
+width: 156px;
+}
+.photo { 
+width: 150px;
+}
+p { 
+line-height: 1.5em;
+padding: 0px 0 4px 0;
+font-size: 13px;
+}
+.no { 
+width: 800px;
+}
+.ti { 
+margin: 0 0 20px 0;
+}
+.tip { 
+margin: 15px 0 20px 0;
+}
+table td { 
+font-size: 13px;
+}
+.log { 
+width: 150px;
+margin: 10px;
+}
