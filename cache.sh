@@ -1,6 +1,6 @@
 #cache - download a webpage to disc, cache it in gzip and add to website
 #header footer file should be present also git in filesystem and wget
-#usage cache.sh WEBSITE_URL TITLE
+#usage cache.sh WEBSITE_URL TITLE DESCRIPTION
 NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 mkdir cache/$NEW_UUID
 cd cache

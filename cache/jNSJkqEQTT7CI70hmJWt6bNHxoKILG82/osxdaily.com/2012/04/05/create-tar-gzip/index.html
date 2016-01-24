@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta property="fb:admins" content="724580831" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="     How to Create a Tar GZip File from the Command Line"   />
+<meta name="keywords" content="OS X Daily, OSXDaily, Apple, Mac, iPhone, iPad, Mac OS X, iOS, Mac, tips, tricks, tutorials, news" />
+
+<link rel="shortcut icon" href="../../../../images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/style.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://osxdaily.com/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://osxdaily.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://osxdaily.com/feed/atom/" />
+<link rel="pingback" href="http://osxdaily.com/xmlrpc.php" />
+
+
+
+<title>   How to Create a Tar GZip File from the Command Line   </title>
+
+
+
+
+<style type='text/css'>
+					.no-break br {
+						display: none !important;
+					}
+			</style><link rel="alternate" type="application/rss+xml" title="OS X Daily &raquo; How to Create a Tar GZip File from the Command Line Comments Feed" href="http://osxdaily.com/2012/04/05/create-tar-gzip/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/cdn.osxdaily.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://osxdaily.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.osxdaily.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Load Up Your iPad with a Massive Library of Over 38,000 Free eBooks' href='http://osxdaily.com/2012/04/05/load-up-your-ipad-with-a-massive-library-of-over-38000-free-ebooks/' />
+<link rel='next' title='Drag &#038; Drop from Spotlight in Mac OS X' href='http://osxdaily.com/2012/04/06/drag-drop-spotlight-mac-os-x/' />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='http://wp.me/ps4An-7Ar' />
+	<script type="text/javascript">
+		(function () {
+			var xauth = document.createElement('script');
+			xauth.type = 'text/javascript';
+			xauth.async = true;
+			var host = 'http://osxdaily.com';
+			if ('https:' == document.location.protocol) {
+				host = host.replace('http://', 'https://');
+			}
+			xauth.src = host + '/presslabs.js?ts=' + Math.floor((Math.random() * 100000) + 1);
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(xauth, s);
+		})();
+	</script>
+<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'4c486867-b8be-47a6-abe2-abae2f3fb59a'});var st_type='wordpress';</script>
+
+<link rel="stylesheet" href="http://cdn.osxdaily.com/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+    var __st_loadLate=true; //if __st_loadLate is defined then the widget will not load on domcontent ready
+</script>
+<script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher:'fe5e0a84-1fac-40de-8014-9f89fc1cbe6a'});</script>
+</head>
+
+<body>
+
+
+<div id="wrap">
+
+<div id="header">
+
+<div id="topline">
+
+
+<div id="space">
+
+
+<div id="logobox">
+<a href="http://osxdaily.com"><img src="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/img/osxdaily-logo-l.png" alt="OS X Daily"  border="0" width="250" height="75" /></a>
+</div>
+
+<div id="top_block">
+
+<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "728x90,468x60";
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/OSXDailycom/ROS/tags.js"></script>
+
+</div>
+
+
+<div id="top_wide_block">
+
+<div class="underlinemenu">
+<ul>
+
+<li style="margin-left:none !important;"><a href="http://osxdaily.com/">Home</a></li>
+<li><a href="http://osxdaily.com/category/mac-os-x/">Mac OS X</a></li>
+<li><a href="http://osxdaily.com/category/iphone/">iPhone</a></li>
+<li><a href="http://osxdaily.com/category/ipad/">iPad</a></li>
+<li><a href="http://osxdaily.com/category/tips-tricks/">Tips & Tricks</a></li>
+<li><a href="http://osxdaily.com/tag/jailbreak/">Jailbreak</a></li>
+<li><a href="http://osxdaily.com/tag/news/">News</a></li>
+<li><a href="http://osxdaily.com/tag/ios/">iOS</a></li>
+<li style="border-right:none!important;"><div id="gsearch_box">
+
+<form action="http://osxdaily.com/gsearch" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-7321635426958037:1x5yj0-316e" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="33" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</div></li>
+</ul>
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<div id="content">
+
+
+
+<div class="post">
+<h1>How to Create a Tar GZip File from the Command Line</h1>
+
+
+<div id="subhead_block">
+<span class="subhead_lefty">Apr 5, 2012 - <a href="index.html#comments">11 Comments</a></span>
+<span class="subhead_righty"><ul class="share_list">
+<li><span  class='st_twitter_button' displayText='Tweet' st_url="http://osxdaily.com/2012/04/05/create-tar-gzip/" st_title="How to Create a Tar GZip File from the Command Line" st_via="osxdaily"></span><span  class='st_facebook_button' displayText='Facebook' st_url="http://osxdaily.com/2012/04/05/create-tar-gzip/" st_title="How to Create a Tar GZip File from the Command Line"></span><span  class='st_plusone_button' st_url="http://osxdaily.com/2012/04/05/create-tar-gzip/" st_title="How to Create a Tar GZip File from the Command Line"></span></li>
+</ul></span>
+</div>
+
+
+
+<div class="contenttext">
+<div class="KonaBody"><p><img src="http://cdn.osxdaily.com/wp-content/uploads/2012/04/create-tar-gz.jpg" alt="How to Create a Tar GZip Archive Bundle " title="create-tar-gz" width="620" height="87" class="aligncenter size-full wp-image-29170" /></p>
+<p>You&#8217;re probably familiar with <a href="http://osxdaily.com/2012/01/10/how-to-zip-files-in-mac-os-x/">making your own zip files</a> if you&#8217;ve ever needed to transfer a group of files or if you&#8217;re managing your own backups outside of Time Machine. Using the GUI zip tools are easy and user friendly, but if you want some more advanced options with better compression you can turn to the command line to make a tar and gzip archive. The syntax will be the same in Mac OS X as it is in Linux.</p>
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:left;margin:10px 10px 10px 0;">
+<div style="padding-right:20px;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336x280 in page article -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-7321635426958037"
+     data-ad-slot="4239339108"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div>
+
+<p><span id="more-29167"></span></p>
+<h2 style="font-size:1.4em;">Creating a Tar GZip Archive Bundle</h2>
+<p>From the command line (/Applications/Terminal/), use the following syntax:</p>
+<p><code>tar -cvzf tarballname.tar.gz itemtocompress</code></p>
+<p>For example, to compress a directories jpg files only, you&#8217;d type:</p>
+<p><code>tar -cvzf jpegarchive.tar.gz /path/to/images/*.jpg</code></p>
+<p>The * is a wildcard here, meaning anything with a .jpg extension will be compressed into the jpegarchive.tar.gz file and nothing else.</p>
+<p>The resulting .tar.gz file is actually the product of two different things, tar basically just packages a group of files into a single file bundle but doesn&#8217;t offer compression on it&#8217;s own, thus to compress the tar you&#8217;ll want to add the highly effective gzip compression. You can run these as two separate commands if you really want to, but there isn&#8217;t much need because the tar command offers the -z flag which lets you automatically gzip the tar file. </p>
+<p><img src="http://cdn.osxdaily.com/wp-content/uploads/2014/08/terminal-icon-osx-300x262.png" alt="Making a Tar Ball (tar.gz) from the Command Line" width="300" height="262" class="aligncenter size-medium wp-image-47164" /></p>
+<h2 style="font-size:1.4em;">Opening .tar.gz Archives</h2>
+<p>Unpacking the gz and tar files can be done with applications like <a href="http://osxdaily.com/2012/01/30/extract-installer-package-files-mac-os-x-pacifist/">Pacifist</a> or <a href="http://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12">Unarchiver</a> (free), or by going back to the command line with:</p>
+<p><code>gunzip filename.tar.gz</code></p>
+<p>Followed by:</p>
+<p><code>tar -xvf filename.tar</code></p>
+<p>Generally you should untar things into a directory, or the present working directory will be the destination which can get messy quick.</p>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div></div>
+</div>
+
+
+
+
+<!--- social functionality -->
+
+<div style="clear:both;display:block;margin:20px 0;">
+
+<div style="clear:both;">
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fosxdaily&amp;width=600&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:35px;" allowTransparency="true"></iframe>
+</div>
+
+<form style="width: 560px; border: 12px solid #2266BB;padding: 10px;text-align:center;box-shadow: 0 1px 10px #444;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=osxdaily', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p style="font-size: 18px;">Enjoy this tip? <strong>Subscribe to the OSXDaily newsletter</strong> to get more of our great Apple tips, tricks, and important news delivered to your inbox! Enter your email address below:</p>
+<p><input type="text" style="width:200px" name="email"></p>
+<input type="hidden" value="osxdaily" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe">
+</form>
+</div>
+
+
+
+<div id="sharing_container">
+
+
+<!--- gads -->
+<div id="lower_content_ad_box">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-7321635426958037";
+/* 336x280, created 8/6/09 */
+google_ad_slot = "3803516584";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+
+<div id="related">
+
+
+</div>
+
+
+</div>
+
+
+<div id="social_sharing_widgets">
+
+<span class="st_facebook_vcount" ></span> 
+<span class="st_twitter_vcount" st_via="osxdaily"></span>
+<span class="st_fblike_vcount" ></span>
+<span class="st_plusone_vcount" st_url="http://osxdaily.com/2012/04/05/create-tar-gzip/"></span>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+        stLight.options({
+                publisher:'fe5e0a84-1fac-40de-8014-9f89fc1cbe6a'
+        });
+</script>
+
+</div>
+
+<h3 style="margin-top:30px;">Related articles:</h3>
+<ul style="margin:0 0 0 20px;color:#555;font-size:1.1em;">
+<li><a href="http://osxdaily.com/2012/05/29/create-extract-bz2-mac-os-x/" rel="bookmark" title="Permanent Link: Create &#038; Extract bz2 Archives in Mac OS X">Create &#038; Extract bz2 Archives in Mac OS X</a></li><li><a href="http://osxdaily.com/2007/10/29/how-to-add-a-user-from-the-os-x-command-line-works-with-leopard/" rel="bookmark" title="Permanent Link: How to: Add a user from the OS X command line, works with Leopard!">How to: Add a user from the OS X command line, works with Leopard!</a></li><li><a href="http://osxdaily.com/2011/06/29/quickly-create-a-new-image-file-from-clipboard-contents-with-preview/" rel="bookmark" title="Permanent Link: Quickly Create a New Image File from Clipboard Contents with Preview">Quickly Create a New Image File from Clipboard Contents with Preview</a></li><li><a href="http://osxdaily.com/2014/07/29/sysdiagnose-mac-os-x-command/" rel="bookmark" title="Permanent Link: Advanced Mac OS X Diagnostics &#038; Troubleshooting with sysdiagnose">Advanced Mac OS X Diagnostics &#038; Troubleshooting with sysdiagnose</a></li></ul>
+
+
+
+</div>
+
+
+
+<div style="margin:20px 0 30px 0;">
+<strong style="font-size:14px;color:#555 !important;padding-top:10px;paddin-bottom:10px;">Posted by: William Pearson in <a href="http://osxdaily.com/category/command-line/" rel="category tag">Command Line</a>, <a href="http://osxdaily.com/category/mac-os-x/" rel="category tag">Mac OS X</a>, <a href="http://osxdaily.com/category/tips-tricks/" rel="category tag">Tips &amp; Tricks</a></strong>
+</div>
+
+
+<a name="comments"></a>
+
+
+<!-- You can start editing here. -->
+
+	<h4 id="comments">11 Comments</h4>
+<p class="smaller-font"><a href='http://osxdaily.com/2012/04/05/create-tar-gzip/feed/'>&raquo; Comments RSS Feed</a></p>
+
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-372826">
+				<div id="div-comment-372826" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://music.craigmc.org' rel='external nofollow' class='url'>CraigMcNerdy</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-372826">
+			April 5, 2012 at 4:48 pm</a>		</div>
+
+		<p>You can use the xzvf switch when untarring to avoid needing to use unzip (or gzip).</p>
+<p>e.g.<br />
+tar xzvf myTarFile.tar.gz</p>
+<p>also you may find tarred/gzip files called .tgz<br />
+The file extension doesn&#8217;t actually matter on these, but your readers should know this lil&#8217; factoid.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=372826#respond' onclick='return addComment.moveForm( "div-comment-372826", "372826", "respond", "29167" )' aria-label='Reply to CraigMcNerdy'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-372837">
+				<div id="div-comment-372837" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">James</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-372837">
+			April 5, 2012 at 5:26 pm</a>		</div>
+
+		<p>You really want a mind bender, how&#8217;s this for fun: </p>
+<p>Had to copy hundreds of thousands of small files from a Linux server to a Mac over the LAN.  A normal cp operation is slow because it never gets a chance to increase the network bandwidth as it resets for each individual file. Watching a performance graph would show it peaking and falling for every individual file.  So the solution would be to tar gzip the files into one huge file and then copy that file.  Trouble was, there was not enough free disk space to handle the huge file.  </p>
+<p>Netcat to the rescue!  Netcat is a very powerful tool it can open a raw network port and pass data through that port and it can listen for a raw data stream on the other end.  So the trick is to tar gzip the files and pipe the output (no filename) into nc directing nc to a network port number of choice.  Then on the receiving computer you listen with nc and pipe it&#8217;s data to untar and ungzip the files on the receiving end.  </p>
+<p>To give you an idea of how effective something like that is; the attempted copy operation over an SMB share ran for 5 hours and the Finder was still just calculating the number of files which at that point was well over 500,000 files! i.e. nothing had actually started to be copied! I tried using the cp command from terminal and it was only about a third of the way through the copy process having run overnight.  I aborted the copy process and setup nc to listen on a particular port and piped it&#8217;s output to a tar gz command that would untar and ungzip the files to the required path.  Then on the sending system I created a tar gzip command and piped it&#8217;s output to nc directing to the IP address of the receiving computer and the same network port.  The copy operation finished in 2 hours and looking at the network activity the Gigabit Ethernet adapter was almost completely saturated at 100%.  The performance graph rapidly peaked and stayed completely peaked the entire time the copy process ran.  </p>
+<p>So essentially, the sending system executed tar and gzip operations storing the data in RAM while it pushed that data over netcat to a waiting netcat listening on a pre-determined network port where the files were pushed to a tar gzip command that decompressed the files.  Since there was a large continuous amount of data pumping through the network port, the amount of bandwidth increased exponentially until it maxed out the Ethernet card.  This allowed it to go as fast as it possibly could have run.  </p>
+<p>The mind blowing part?  These tools are built in to OS X and every Unix system but they have been around for more than 20 years.  The whole Unix concept is small tools that do one thing very well and you connect the tools to one another via the pipe command.  </p>
+<p>The funny part?  I&#8217;ve been around the block for years and Windows cannot do this at all.  I don&#8217;t even know of a single third party application that comes close to the way I was able to use tar gzip and netcat to speed up copying an enormous amount of data.  But I can boot a Windows box with a Linux USB flash drive and do it!</p>
+<p>Let&#8217;s have a few more articles about interesting things you can do with the Unix pipe and some little known command line programs!  </p>
+<p>Disclaimer: The sending system was Linux running a newer GNU version of netcat while OS X includes the older FreeBSD version.  I had to use homebrew to install the GNU version of netcat on OS X to get it to work with the Linux system.  The command parameters vary a bit between the two netcat programs and I was unable to get the built-in OS X version of netcat to play nice with the Linux GNU version. </p>
+<p>Homebrew is a way to install Linux tools on OS X it&#8217;s really simple and easy. <a href="http://mxcl.github.com/homebrew/" rel="nofollow">http://mxcl.github.com/homebrew/</a> &#8211; for example OS X includes the curl command but maybe you want the wget command which is similar but maybe you are more familiar with wget.  Homebrew installs the add-on tools into a location that won&#8217;t interfere with the normal OS X tools and if their names are the same, it will use the Homebrew one first.  Homebrew will not mess up your Mac, but it might confuse someone else trying to work on your Mac.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=372837#respond' onclick='return addComment.moveForm( "div-comment-372837", "372837", "respond", "29167" )' aria-label='Reply to James'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-372846">
+				<div id="div-comment-372846" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Pfffffft</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-372846">
+			April 5, 2012 at 5:40 pm</a>		</div>
+
+		<p>Seriously, who the hell doesn&#8217;t know how to create a tarball from the command line?</p>
+<p>Yikes, have the script kiddies taken over or something?!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=372846#respond' onclick='return addComment.moveForm( "div-comment-372846", "372846", "respond", "29167" )' aria-label='Reply to Pfffffft'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-409386">
+				<div id="div-comment-409386" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Shawn</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-409386">
+			July 24, 2012 at 12:52 am</a>		</div>
+
+		<p>I have no trouble creating the .tgz; The trouble for me is creating the tarball in a separate directory without removing the original, and a checksum would be nice too, I just want to make sure everything went ok before I remove the files I want to send. Google has indexed and linked me here and though interesting I still think I should consult the man page because I just started picturing doing something with the pipe operator and I am confused on how James /\ sent anything like that without creating a namedpipe, Just baffled right now, and my e2fsck and fsck repair today, brought everything back that I can remember and it seemed more organized all numbered in the lost+found because I am sure I destroyed the file table but seeing as I know the physical layout of my flash, it wasn&#8217;t too difficult, now in this sleepy state I say personal buttler tgz directly to another drive without removing the originals or trying to make a local copy first because space is scarce.. Or it would be done already.. and now I just inspired to create my first named pipe for mostly just the fun of it and hey why not I just did my first fsck recovery.. and it was easy.. and I didn&#8217;t know ncat could do that.. that tool is handy.. Thanks for the read guyz.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=409386#respond' onclick='return addComment.moveForm( "div-comment-409386", "409386", "respond", "29167" )' aria-label='Reply to Shawn'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-372848">
+				<div id="div-comment-372848" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://mrfloris.com' rel='external nofollow' class='url'>Floris</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-372848">
+			April 5, 2012 at 5:43 pm</a>		</div>
+
+		<p>Old school knowledge, refreshed for the new generation of UNIX / Mac users. Thanks for writing it all out. Top notch.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=372848#respond' onclick='return addComment.moveForm( "div-comment-372848", "372848", "respond", "29167" )' aria-label='Reply to Floris'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-372868">
+				<div id="div-comment-372868" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">abacus rosse</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-372868">
+			April 5, 2012 at 6:10 pm</a>		</div>
+
+		<p>I forget things like this so it&#8217;s nice to have the refresher, sometimes we have our heads so thick in the sands of iOS and OS X that we forget the core of both operating systems is BSD unix.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=372868#respond' onclick='return addComment.moveForm( "div-comment-372868", "372868", "respond", "29167" )' aria-label='Reply to abacus rosse'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-373109">
+				<div id="div-comment-373109" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Linuxy</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-373109">
+			April 6, 2012 at 6:22 am</a>		</div>
+
+		<p>I always advise people to use Linux from time to time, rather than just the Mac 100% of the time.</p>
+<p>The benefits of using Linux as an alternative is that it forces you to gain useful technical knowledge that also applies to the Mac. It&#8217;s like driving stick-shift.</p>
+<p>Whereas&#8230; using Windows is a waste of time, I find.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=373109#respond' onclick='return addComment.moveForm( "div-comment-373109", "373109", "respond", "29167" )' aria-label='Reply to Linuxy'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-373547">
+				<div id="div-comment-373547" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Theo Vosse</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-373547">
+			April 7, 2012 at 12:43 am</a>		</div>
+
+		<p>A .tar, .gz or .tar.gz file also unpacks with the default &#8220;Archiver Utility&#8221;, at least on 10.7.</p>
+<p>That said, I think it&#8217;s a good idea to have people use the command line, if only to get a feeling that under the hood there is something else than icons and windows.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=373547#respond' onclick='return addComment.moveForm( "div-comment-373547", "373547", "respond", "29167" )' aria-label='Reply to Theo Vosse'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-odd thread-alt depth-1" id="comment-392851">
+				<div id="div-comment-392851" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://osxdaily.com/2012/05/29/create-extract-bz2-mac-os-x/' rel='external nofollow' class='url'>Create &amp; Extract bz2 Archives in Mac OS X</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-392851">
+			May 29, 2012 at 3:27 pm</a>		</div>
+
+		<p>[&#8230;] it just compresses them. If you want to add a group of files to a bzip archive you&#8217;d want to use tar beforehand. Some versions of tar even support creating bz2 archives natively with the -j flag, but [&#8230;]</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=392851#respond' onclick='return addComment.moveForm( "div-comment-392851", "392851", "respond", "29167" )' aria-label='Reply to Create &amp; Extract bz2 Archives in Mac OS X'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-398860">
+				<div id="div-comment-398860" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Sinnebril</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-398860">
+			June 15, 2012 at 4:55 am</a>		</div>
+
+		<p>I tried to converd a file by commandline to tar.gz extention, but I get an error: &#8220;&#8216;tar&#8217;is not recognized as an internal or external command, operable program or batch file.&#8221;<br />
+Do I need to install a program or do something else before running the command &#8220;tar -cvzf jpegarchive.tar.gz /path/to/images/*.jpg&#8221;?</p>
+<p>Please help!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=398860#respond' onclick='return addComment.moveForm( "div-comment-398860", "398860", "respond", "29167" )' aria-label='Reply to Sinnebril'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-1790656">
+				<div id="div-comment-1790656" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">shgy</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="index.html#comment-1790656">
+			December 31, 2015 at 1:54 am</a>		</div>
+
+		<p>thanks!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://osxdaily.com/2012/04/05/create-tar-gzip/?replytocom=1790656#respond' onclick='return addComment.moveForm( "div-comment-1790656", "1790656", "respond", "29167" )' aria-label='Reply to shgy'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+	</ol>
+
+
+ 
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+<form action="http://osxdaily.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="29167" />
+
+<input type='hidden' name='comment_post_ID' value='29167' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7a40b2a809" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="60"/></p>
+</form>
+
+
+</div>
+
+
+
+<div class="navigation">
+<div class="aleft">
+&laquo; <a href="http://osxdaily.com/2012/04/05/load-up-your-ipad-with-a-massive-library-of-over-38000-free-ebooks/">Load Up Your iPad with a Massive Library of Over 38,000 Free eBooks</a></div>
+<div class="aright">
+<a href="http://osxdaily.com/2012/04/06/drag-drop-spotlight-mac-os-x/">Drag &#038; Drop from Spotlight in Mac OS X</a> &raquo;</div>
+</div> <!-- end navigation -->
+
+
+<p>&nbsp;</p>
+<span class="content_ad_head"><a target="_blank" rel="nofollow" href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FApple-Computers%2Fb%3Fie%3DUTF8%26node%3D565124&tag=oxd-20&linkCode=ur2&camp=1789&creative=390957">Shop for Apple & Mac Deals on Amazon.com</a><img src="https://www.assoc-amazon.com/e/ir?t=oxd-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></span>
+
+
+</div>
+
+
+<div id="right_column">
+<div id="subscribe_box">
+<h3 class="sidebarstyle" id="subscribe_box_head">Subscribe to OSXDaily</h3>
+<a rel="nofollow" target="_blank" target="_blank" href="http://feeds.feedburner.com/osxdaily"><img src="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/img/socialicons/rss.png" border="0" height="48" width="48" alt="Subscribe to RSS" /></a>
+
+<a rel="nofollow" href="http://twitter.com/osxdaily"><img src="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/img/socialicons/twitter.png" border="0" height="48" width="48" alt="Subscribe to Twitter Feed" /></a>
+
+<a rel="nofollow" href="http://www.facebook.com/osxdaily"><img src="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/img/socialicons/facebook.png" border="0" height="48" width="48" alt="Follow on Facebook" /></a>
+
+<a rel="nofollow"  target="_blank" href="http://feedburner.google.com/fb/a/mailverify?uri=osxdaily&amp;loc=en_US"><img src="http://cdn.osxdaily.com/wp-content/themes/osxdaily-left2/img/socialicons/mail.png" border="0" height="48" width="48" alt="Subscribe to eMail Updates" /></a>
+
+<div style="padding:10px 0 20px 25px;">
+
+<div style="width:125px;float:left;">
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fosxdaily&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<div style="width:100px;float:left;">
+<a href="https://twitter.com/OSXDaily" class="twitter-follow-button" data-show-count="false">Follow @OSXDaily</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div style="margin:10px 0;">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1278263" class="bsarocks bsap_95cb8853ab792f424634d57b5de28eed"></div>
+<!-- End BuySellAds Zone Code -->
+
+<div style="margin:10px 0;">
+
+<!-- tf -->
+<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "300x250,160x600,300x600";
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/OSXDailycom/ROS/tags.js"></script>
+</div>
+
+</div>
+
+<div style="margin-top:10px;"></div>
+
+
+
+
+<div style="margin:10px 0;text-align:center;">
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2Fosxdaily&amp;width=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=true&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:258px;" allowTransparency="true"></iframe>
+</div>
+
+<div style="margin:10px 0;text-align:center;">
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-height="69" data-href="//plus.google.com/110005238800692664883" data-rel="publisher"></div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+<div style="margin:10px 0;">
+
+</div>
+
+<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "300x250,160x600,300x600";
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/OSXDailycom/ROS/tags.js"></script>
+
+
+
+
+
+
+<div style="margin:10px 0;">
+
+<!-- tf -->
+<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "300x250";
+    e9.noAd = 1;
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/OSXDailycom/ROS/tags.js"></script>
+
+</div>
+
+
+
+
+<div style="margin:10px auto;text-align:center;">
+<!-- wide amazon banner -->
+<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=oxd-20&o=1&p=12&l=st1&mode=electronics&search=Apple&fc1=000000&lt1=_blank&lc1=3366FF&bg1=FFFFFF&f=ifr" marginwidth="0" marginheight="0" width="300" height="250" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>
+</div>
+
+
+
+
+
+</div>
+
+
+<div id="footer">
+
+<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "728x90,468x60";
+    e9.noAd = 1;
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/OSXDailycom/ROS/tags.js"></script>
+
+<div id="footer_item_container">
+
+
+
+<h4>OS X Daily</h4>
+<p>Email us: <a href="mailto:osxdailycom@gmail.com" target="_blank">osxdailycom@gmail.com</a></p>
+<p><a href="http://osxdaily.com/about/">About OSXDaily</a> | <a href="http://www.osxdaily.com/contact-os-x-daily/">Contact Us</a> | <a href="http://osxdaily.com/osxdailycom-privacy-policy/">Privacy Policy</a> | <a href="http://osxdaily.com/sitemap-all/">Sitemap</a> </p>
+<p>This website is unrelated to Apple Inc</p>
+<p>All trademarks and copyrights on this website are property of their respective owners.</p>
+
+
+</div>
+
+<div id="footer_text">
+<p>&copy; 2016 OS X Daily. All Rights Reserved. Reproduction without explicit permission is prohibited.</p>
+</div>
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-428992-6";
+urchinTracker();
+</script>
+
+
+
+	
+		<!-- Kontera ContentLink -->
+    	<script type="text/javascript">
+		var dc_UnitID = 14;
+		var dc_PublisherID = 152749;
+		var dc_AdLinkColor = '#0072bc';
+		var dc_isBoldActive = 'no';
+		var dc_open_new_win = 'yes';
+		var dc_adprod='ADL';
+   	 	</script>
+		<script type="text/javascript" SRC="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
+		<!-- Kontera ContentLink -->
+    	<!-- Powered by WPtouch Pro: 3.8.3 --><script type='text/javascript' src='http://cdn.osxdaily.com/wp-content/plugins/akismet/_inc/form.js?ver=3.0.4'></script>
+<script type='text/javascript' src='http://cdn.osxdaily.com/wp-includes/js/comment-reply.min.js?ver=4.3.1'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201603.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'6690815',v:'ext',post:'29167'});
+var load_cmc = function(){linktracker_init(6690815,29167,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+</div>
+
+</div>
+
+<!-- BuySellAds Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds Ad Code -->
+
+</body>
+</html>
