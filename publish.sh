@@ -16,6 +16,7 @@ quote user $LOGIN
 quote pass $PASSWORD
 cd $REMOTEPATH
 prompt off
+binary
 mput *.*
 exit
 INPUT_END
